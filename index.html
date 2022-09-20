@@ -10,6 +10,7 @@
     <!-- CSS only -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/highlight.css">
+    <link rel="stylesheet" href="css/anim.css" />
 </head>
 
 <body onload="AppMain.init()">
@@ -343,7 +344,7 @@
             </div>
 
             <div class="container">
-                <h5>Here is something for you</h5>
+                <h5>Here is some of my works</h5>
                 <div class="img-cont-for-grid">
 
                     <div class="b a">
@@ -383,26 +384,26 @@
                             </a>
                         </div> -->
                     </div>
-<!-- 
+                     
                     <div class="b c">
                         <div class="a">
-                            <a href="#Some project">
+                            <a href="https://remindev.github.io/Landex-clone">
                                 <div class="disp">
-                                    Some projects
+                                    Landex Clone
                                 </div>
-                                <img src="res/ill-01.jpg" alt="">
+                                <img src="res/work-01.png" alt="">
                             </a>
                         </div>
                         <div class="a">
-                            <a href="#Some project">
+                            <a href="https://remindev.github.io/AMD-CLONE">
                                 <div class="disp">
-                                    Some projects
+                                    Amd Clone
                                 </div>
-                                <img src="res/ill-01.jpg" alt="">
+                                <img src="res/work-02.png" alt="">
                             </a>
                         </div>
                     </div>
-
+                    <!--
                     <div class="b d">
                         <div class="a">
                             <a href="#Some project">
@@ -425,12 +426,12 @@
                 </div>
             </div>
 
-            <div class="container mt-5  " id="Contact Me"  >
+            <div class="container mt-5  " id="Contact Me"  data-aos="fade-up" data-aos-delay="100">
                 <div class="social-pages">
                     <h3>Connect with me</h3>
                     <div class="cont">
                         <a href="https://www.linkedin.com/in/remin-t-roy/" class="btn btn-outline-dark" target="_blank">
-                           <img src="res/linkedin.svg" alt="">
+                            <img src="res/linkedin.svg" alt="">
                             Linked IN
                         </a>
                         <a href="http://www.github.com/remindev" class="btn btn-outline-dark" target="_blank">
@@ -450,10 +451,11 @@
             </div>
 
             <div class="container mt-5">
-                <div class="feedback" id="Feedback">
+                <form class="feedback" id="Feedback" method="post" action="https://script.google.com/macros/s/AKfycbwFjVuVeD0I5IodnPsuK1FUkAQ_B_bn-C7Yql5OAdlT8CvA2aaCMyXZWmZkKg3R7NABuQ/exec">
+
                     <h3>For Enquiry</h3>
 
-                    <div class="err-disp" id="errDisp-form">
+                    <div class="err-disp" id="errDisp-form" >
                         Enter a valid name
                     </div>
 
@@ -463,29 +465,33 @@
 
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" name="name" id="name-form-submission" class="form-control" placeholder="Name" >
+                        <input type="text" name="name" id="name-form-submission" class="form-control"
+                            placeholder="Name">
                         <!-- <small id="helpId" class="text-muted">Help text</small> -->
                     </div>
 
                     <div class="mb-3">
-                      <label for="email"  class="form-label">Email</label>
-                      <input type="email" onfocus="AppMain.form.submit()" class="form-control " name="email" id="email-form-submission"  placeholder="abc@mail.com">
-                      <!-- <small id="emailHelpId" class="form-text ">Help text</small> -->
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control " name="email"
+                            id="email-form-submission" placeholder="abc@mail.com">
+                        <!-- <small id="emailHelpId" class="form-text ">Help text</small> -->
                     </div>
 
-                    
-                    <label for="email"  class="form-label">Leave a comment</label>
+
+                    <label for="Subject" class="form-label">Leave a comment</label>
                     <div class="form-floating mb-3">
-                      <input type="text" onfocus="AppMain.form.submit()" class="form-control" name="Subject" id="subject-form-submission" placeholder="Subject">
-                      <label for="floatingLabel">Subject</label>
+                        <input type="text" class="form-control" name="Subject"
+                            id="subject-form-submission" placeholder="Subject">
+                        <label for="floatingLabel">Subject</label>
                     </div>
 
-                    <button class="btn btn-outline-primary dr-1" onclick="AppMain.form.submit()">Submit</button>
-                    
-                </div>
+                    <button type="button" class="btn btn-outline-primary dr-1" onclick="AppMain.form.submit()">Submit</button>
+                    <button type="submit" id="btn-form-final" hidden></button>
+
+                </form>
             </div>
 
-            <div class="footer" >
+            <div class="footer">
                 <h3>Hmm, looks like you have reached the end</h3>
             </div>
 
@@ -494,8 +500,13 @@
     </div>
 
 
+    <script src="js/anim.js"></script>
     <script src="js/highlight.js"></script>
     <script src="js/java.js"></script>
+    <script>
+       
+
+    </script>
     <script>hljs.highlightAll();</script>
 </body>
 
