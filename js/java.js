@@ -7,9 +7,9 @@ var AppMain = {
 
         stopLoadingLoading(); // stops all loading...
 
-        AOS.init({
-            duration: 800,
-        });
+        // AOS.init({
+        //     duration: 800,
+        // });
 
         AppMain.intro(4,2000); // start intro animations...
         // AppMain.intro(false, false, true); // hide intro animations...
